@@ -58,6 +58,7 @@ jobs:
 
       - name: Merge changes from origin main into ci
         run: |
+          echo "hello!"
           chmod +x ./.github/script/merge-branch.sh
           ./.github/script/merge-branch.sh
         env:
